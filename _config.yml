@@ -3,17 +3,42 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
+# 博客的标题
+title: 中华好学者
+
+# banner显示的子标题
+subtitle: 理性之思想 自主之精神
+
+# banner显示的简短介绍
+subtitle_desc: 中华民族的伟大复兴
+
+# seo关键字
+keywords: 学术, 学者, 中国, 中华, 法律, 文化, 经济, 历史, 研究, 华家, 儒家
+
+# 博客介绍（同时用于seo）
+description: “中华好学者”倡导“理性之思想，自主之精神”，专注于学者、学界、学术的发展进步，定期向您推荐中国优秀学者及其文章。
+
+# 个人介绍
+introduction: 专心聆听来自学术界一流学者的声音，9万关注者的不二选择
+
+# 站长信息
+# author: John Doe
+author:
+  name: 中华好学者网
+  link: http://www.zhonghuaxuezhe.com
+
+# 用于页面 footer 的站长信息
+about:
+  info: 中华好学者网站版权所有  京ICP备16061768号
+  address: Beijing, China
+  email: lawgame@263.net
+
+language: zh-cn
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://bghunt.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -50,7 +75,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 12
   order_by: -date
   
 # Category & Tag
@@ -67,13 +92,8 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 12
 pagination_dir: page
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,3 +101,126 @@ deploy:
   type: git
   repository: https://github.com/jacobcy/jacobcy.github.io.git
   branch: master
+
+# 添加作者
+author_generator:
+  path: 'authors/'
+  per_page: 12
+  order_by: -date
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: skapp
+
+# 主题skapp的配置
+
+# 网站分类目录设置
+menu:
+  home: / 
+  archive: /archives
+  about: /about
+
+# 博客的favicon图标，支持本地及在线两种方式，本地请将图标放置于 themes/hexo-theme-skapp/source/img 目录下
+favicon_ico: /img/favicon.ico
+
+# 博客的左上角logo图标，支持本地及在线两种方式
+logo: /img/logo-text-white.png
+
+# 头像/二维码（用于显示在底部）二选一
+avatar: /img/qrcode.png
+# qrcode: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
+
+# 文章的默认封面
+default_cover: /img/default_cover.png
+
+# header 的背景图
+header_cover: /img/toubu2.jpg
+
+# 404 页面的背景图
+error_page_bg: /img/dogs.jpg
+
+# 页面加载loading图标
+loader_img: /img/loader.gif
+
+# 文章页是否显示封面图
+show_cove: false
+
+# Baidu statistic
+baidu_statistic: e3267498201dfa9699a5c509424709d6
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Disqus
+# disqus_shortname: ***
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+
+  # Sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Autoprefixer
+autoprefixer:
+  exclude:
+    - '*.min.css'
+  browsers:
+    - 'last 2 versions'
+
+# Lunr
+lunr:
+  field: all
+  fulltext: false
+  path: assets/lunr/
+
+# filter_cleanup
+hfc_useref:
+  enable: true
+  concat: true
+
+hfc_html:
+  enable: true
+  exclude:
+
+hfc_css:
+  enable: true
+  exclude: 
+    - '*.min.css'
+
+hfc_js:
+  enable: true
+  mangle: true
+  exclude: 
+    - '*.min.js'
+
+hfc_img:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+
+hfc_favicons:
+  enable: false
+  src: img/blog-logo.png
+  target: img/
+  icons:
+    android: true
+    appleIcon: true
+    appleStartup: false
+    coast: false
+    favicons: true
+    firefox: false
+    opengraph: false
+    windows: true
+    yandex: false
+
