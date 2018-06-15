@@ -4,7 +4,7 @@
 
 # Site
 # 博客的标题
-title: 中华好学者
+title: 一个测试站
 
 # banner显示的子标题
 subtitle: 理性之思想 自主之精神
@@ -16,7 +16,7 @@ subtitle_desc: 中华民族的伟大复兴
 keywords: 学术, 学者, 中国, 中华, 法律, 文化, 经济, 历史, 研究, 华家, 儒家
 
 # 博客介绍（同时用于seo）
-description: “中华好学者”倡导“理性之思想，自主之精神”，专注于学者、学界、学术的发展进步，定期向您推荐中国优秀学者及其文章。
+description: “定期向您推荐优秀文章。
 
 # 个人介绍
 introduction: 专心聆听来自学术界一流学者的声音，9万关注者的不二选择
@@ -111,7 +111,7 @@ author_generator:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: skapp
+theme: hiero
 
 # 主题skapp的配置
 
@@ -156,7 +156,7 @@ feed:
   limit: 20
 
 # Disqus
-# disqus_shortname: ***
+disqus_shortname: bghunt
 
 # Sitemap
 sitemap:

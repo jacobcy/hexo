@@ -5,8 +5,15 @@
   "hexo": {
     "version": "3.7.1"
   },
+  "scripts": {
+    "sass": "node-sass"
+  },
   "dependencies": {
     "global": "^4.3.2",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-git": "^1.0.9",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-htmlclean": "^2.7.22",
@@ -40,6 +47,7 @@
     "hexo-server": "^0.2.0",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
+    "load-grunt-tasks": "^4.0.0",
     "lunr": "mamboer/lunr.js",
     "moment": "^2.22.2",
     "node-sass": "^4.9.0",
